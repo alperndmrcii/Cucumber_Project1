@@ -42,7 +42,7 @@ public class DialogContent extends Parent{
     public WebElement registerBtn;
     @FindBy(xpath = "//*[text()='Your account was created successfully. You are now logged in.']")
     public WebElement successMessage;
-    @FindBy(xpath = "log out //*[text()='Log Out']")
+    @FindBy(xpath = "//*[text()='Log Out']")
     public WebElement logOut;
     @FindBy(xpath = "//input[@name='username']")
     public WebElement username1;
@@ -72,7 +72,8 @@ public class DialogContent extends Parent{
     public WebElement payeeState;
     @FindBy(xpath = "//input[@ng-model='payee.phoneNumber']")
     public WebElement payeePhoneNumber;
-
+    @FindBy(xpath = "//p[text()='The username and password could not be verified.']")
+    public WebElement Error;
 
     @FindBy(xpath = "//input[@value='Log In']")
     public WebElement loginBtn;

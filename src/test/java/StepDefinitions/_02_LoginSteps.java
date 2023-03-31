@@ -23,4 +23,14 @@ public class _02_LoginSteps {
     public void userShouldLoggedIn() {
         GWD.getDriver().getCurrentUrl().toLowerCase().contains("overview");
     }
+
+    @Then("login shoul fail")
+    public void loginShoulFail() {
+       dc.verifyContainsTextFunction(dc.Error,"verified");
+    }
+
+    @And("click on the logout button")
+    public void clickOnTheLogoutButton() {
+        dc.clickFunction(dc.logOut);
+    }
 }
