@@ -77,5 +77,26 @@ public class DialogContent extends Parent{
 
     @FindBy(xpath = "//input[@value='Log In']")
     public WebElement loginBtn;
+    @FindBy(xpath = "//div[@ng-show='showResult']")
+    public WebElement paymentComplete;
+
+
+
+    public WebElement getWebElement(String strButton){
+
+        switch (strButton)
+        {
+            case "payeeName" : return payeeName;
+            case "payeeAdressStreet" : return payeeAdressStreet;
+            case "payeeAdressCity" : return payeeAdressCity;
+            case "payeeState" : return payeeState;
+            case "payeeZipCode" : return payeeZipCode;
+            case "payeePhoneNumber" : return payeePhoneNumber;
+            case "payeeAccount" : return payeeAccount;
+            case "payeeVerifyAccount" : return payeeVerifyAccount;
+            case "payeeAmount" : return payeeAmount;
+        }
+        return null;
+    }
 
 }
