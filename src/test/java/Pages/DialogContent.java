@@ -52,6 +52,28 @@ public class DialogContent extends Parent{
     public WebElement failMessage;
     @FindBy(xpath = "//*[text()='Bill Pay']")
     public WebElement billPay;
+    @FindBy(xpath = "//input[@value='Send Payment']")
+    public WebElement payeeSendPaymentBtn;
+    @FindBy(xpath = "//input[@ng-model='amount']")
+    public WebElement payeeAmount;
+    @FindBy(xpath = "//input[@ng-model='verifyAccount']")
+    public WebElement payeeVerifyAccount;
+    @FindBy(xpath = "//input[@ng-model='payee.name']")
+    public WebElement payeeName;
+    @FindBy(xpath = "//input[@name='payee.address.street']")
+    public WebElement payeeAdressStreet;
+    @FindBy(xpath = "//input[@name='payee.address.zipCode']")
+    public WebElement payeeZipCode;
+    @FindBy(xpath = "//input[@name='payee.address.city']")
+    public WebElement payeeAdressCity;
+    @FindBy(xpath = "//input[@ng-model='payee.accountNumber']")
+    public WebElement payeeAccount;
+    @FindBy(xpath = "//input[@name='payee.address.state']")
+    public WebElement payeeState;
+    @FindBy(xpath = "//input[@ng-model='payee.phoneNumber']")
+    public WebElement payeePhoneNumber;
+
+
     @FindBy(xpath = "//input[@value='Log In']")
     public WebElement loginBtn;
 
