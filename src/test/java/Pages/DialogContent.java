@@ -52,5 +52,7 @@ public class DialogContent extends Parent{
     public WebElement failMessage;
     @FindBy(xpath = "//*[text()='Bill Pay']")
     public WebElement billPay;
+    @FindBy(xpath = "//input[@value='Log In']")
+    public WebElement loginBtn;
 
 }
