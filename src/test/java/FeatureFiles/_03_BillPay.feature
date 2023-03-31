@@ -22,8 +22,8 @@ Feature:  Bill Pay Functionality
     Examples:
       | payeeName | adressStreet | adressCity | adressState | zipCode | payeePhoneNumber | payeeAccount | payeeVerifyAccount | payeeAmount |
       | Electric  | Kazimdirik   | Bornova    | İzmir       | 35353   | 05555555555      | 21231        | 21231              | 85          |
-      | Su        | Kazimdirik   | Bornova    | İzmir       | 35353   | 05555555555      | 212311        | 212311              | 45          |
-      | Dogalgaz  | Kazimdirik   | Bornova    | İzmir       | 35353   | 05555555555      | 2123111        | 2123111              | 120          |
+      | Su        | Çankaya   | Dar geldi sana    | Ankara       | 35353   | 05555555555      | 212311        | 212311              | 45          |
+      | Dogalgaz  | Çek çek   |  dünyanın   |  Kahrını da       | 35353   | 05555555555      | 2123111        | 2123111              | 120          |
 
 
 
